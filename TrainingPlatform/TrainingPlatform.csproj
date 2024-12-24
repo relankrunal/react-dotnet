@@ -1,20 +1,18 @@
-TrainingPlatform
-├── ClientApp
-│   ├── src
-│   │   ├── components
-│   │   │   └── App.tsx
-│   │   ├── services
-│   │   │   └── api.ts
-│   │   └── index.tsx
-│   ├── package.json
-│   └── tsconfig.json
-├── Server
-│   ├── Controllers
-│   │   └── WeatherForecastController.cs
-│   ├── Models
-│   │   └── WeatherForecast.cs
-│   └── Program.cs
-├── TrainingPlatform.csproj
-├── appsettings.json
-├── appsettings.Development.json
-└── README.md
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SpaRoot>ClientApp\</SpaRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+</Project>

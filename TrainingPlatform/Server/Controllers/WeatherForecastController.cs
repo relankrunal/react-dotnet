@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TrainingPlatform.Server.Models;
 
 namespace TrainingPlatform.Server.Controllers
 {
